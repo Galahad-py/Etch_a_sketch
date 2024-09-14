@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid-container {
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #000;
+    box-sizing: border-box;
+}
+
+.trail {
+    background-color: rgba(0, 0, 0, 1);
+}
