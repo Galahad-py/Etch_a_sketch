@@ -35,10 +35,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
             gridContainer.addEventListener("mouseover", function () {
-                gridContainer.classList.add("trail");
+                gridContainer.style.backgroundColor = getRandomColor();
 
                 setTimeout(() => {
-                    gridContainer.classList.remove("trail");
+                    gridContainer.style.backgroundColor = "";
                 }, 500);
             });
 
@@ -46,4 +46,17 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
     });
+
+
+    function getRandomColor() {
+        const letters = "0123456789ABCDEF";
+        let color = "#";
+        for (let i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
 });
+
+
+
